@@ -1,5 +1,7 @@
-FROM tomcat:11.0.6-jdk26.0.1
+FROM tomcat:10.1-jdk17
 
 COPY ElanCare.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
+
+CMD ["catalina.sh", "run"]
